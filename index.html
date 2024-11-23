@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#restaurants">Top Restaurants</a></li>
+                        <li><a href="#tourist">Tourist Spots</a></li>
+                        <li><a href="#emergency">Emergency Contacts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <section id="hero">
+        <h1>Explore the World</h1>
+        <p>Your personalized travel guide.</p>
+        <button>Get Started</button>
+
+        <h2>Search for Services</h2>
+        <input type="text" id="search-input" placeholder="Search for restaurants, spots..." autocomplete="off">
+        <div id="suggestions"></div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="C:\Users\USER\TravelPal\frontend\images\restaurant.png" alt="Restaurants">
+                <h3>Top Restaurants</h3>
+                <p>Find the best places to eat.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\USER\TravelPal\frontend\images\sightseeing.png" alt="Tourist Spots">
+                <h3>Tourist Spots</h3>
+                <p>Explore must-visit places.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\USER\TravelPal\frontend\images\emergency.png" alt="Emergency Contacts">
+                <h3>Emergency Contacts</h3>
+                <p>Stay safe with local help.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather">
+        <h2>Current Weather</h2>
+        <div id="weather-info">
+            <p>Loading weather data...</p>
+        </div>
+    </section>
+    
+    <section id="currency">
+        <h2>Currency Converter</h2>
+        <div>
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <select id="currency-from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            to
+            <select id="currency-to">
+                <option value="LBP">LBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <button id="convert">Convert</button>
+        </div>
+        <p id="conversion-result"></p>
+    </section>
+    
+    <section id="time-zone">
+        <h2>Time Zone Converter</h2>
+        <select id="region">
+            <option value="Asia/Beirut">Asia/Beirut</option>
+            <option value="America/New_York">America/New_York</option>
+        </select>
+        <button id="get-time">Get Time</button>
+        <p id="time-result"></p>
+    </section>
+    
+    <section id="emergency-contacts">
+        <h2>Emergency Contacts</h2>
+        <div id="contacts-info">
+            <p>Loading emergency contacts...</p>
+        </div>
+    </section>
+    
+    <section id="reviews">
+        <h2>Reviews & Ratings</h2>
+        <textarea id="review-input" placeholder="Write your review"></textarea>
+        <button id="submit-review">Submit</button>
+        <div id="reviews-list">
+            <h3>Reviews:</h3>
+        </div>
+    </section>
+    
+    <div id="places-container"></div>
+
+    
+
+    <footer>
+        <p>© 2024 Travel Website | Privacy Policy</p>
+    </footer>
+</body>
+</html>
